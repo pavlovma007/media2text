@@ -10,7 +10,7 @@ VOLUME="-v '$AUDIO_PATH:/tmp/in'"
 #VOLUME=""
 
 PROG=test_srt.py
-bash -c "sudo docker run --rm -it $VOLUME $IMAGE bash -c 'cd /app/python/example && ./$PROG /tmp/in  2>/dev/null'" 
+bash -c "sudo docker run --rm $VOLUME $IMAGE bash -c 'cd /app/python/example && ./$PROG /tmp/in  2>/dev/null'" 
 
 exit 0
 
